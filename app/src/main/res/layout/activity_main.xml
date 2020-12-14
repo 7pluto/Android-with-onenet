@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度  "
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:textSize="50dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View  android:layout_height="10px"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        android:background="#03A9F4"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l2"
+        app:layout_constraintTop_toBottomOf="@+id/l1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湿度  "
+            android:textSize="30dp"/>
+        <TextView
+            android:id="@+id/tv_hum"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View  android:layout_height="10px"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/l2"
+        android:background="#03A9F4"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l3"
+        app:layout_constraintTop_toBottomOf="@+id/l2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="灯"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_light"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View  android:layout_height="10px"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/l3"
+        android:background="#03A9F4"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/l3"
+        android:id="@+id/bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/l3"
+        app:layout_constraintLeft_toRightOf="@+id/bt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_1"
+        android:textSize="50dp"
+        android:text="vfd"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
